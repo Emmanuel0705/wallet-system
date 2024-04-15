@@ -25,7 +25,6 @@ const _sendEth = async (privateKey, to, amount, value) => {
       hash: tx.hash,
     };
   } catch (error) {
-    console.log({ error });
     return error.message;
   }
 };
